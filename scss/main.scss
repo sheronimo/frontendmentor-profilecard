@@ -47,10 +47,18 @@ body {
 	background-color: #fff;
 	border-radius: 5px;
 
+	// Profile Info
 	&-info {
 		background: url('../images/bg-pattern-card.svg') no-repeat;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
+	}
+
+	// Profile Image
+	&-img {
+		border-radius: 50%;
+		border: 5px solid #fff;
+		margin-top: 87px;
 	}
 }
 
