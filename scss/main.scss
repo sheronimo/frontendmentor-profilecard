@@ -17,10 +17,9 @@ a {
 }
 
 // Utilities
-%flex-center-shared {
+%flex-shared {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 }
 
 .text-center {
@@ -30,7 +29,8 @@ a {
 // Base styles
 body {
 	min-height: 100vh;
-	@extend %flex-center-shared;
+	@extend %flex-shared;
+	justify-content: center;
 	font-family: $font-stack;
 	background: url('../images/bg-pattern-top.svg') no-repeat bottom 50vh right
 			37vw,
@@ -38,6 +38,7 @@ body {
 	background-color: $clr-primary;
 	background-attachment: fixed;
 	padding: 1.5rem;
+	line-height: 1.5;
 }
 
 // Profile Card
@@ -52,13 +53,52 @@ body {
 		background: url('../images/bg-pattern-card.svg') no-repeat;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
+		padding: 0 0.5rem;
 	}
 
 	// Profile Image
 	&-img {
+		max-width: 100%;
 		border-radius: 50%;
 		border: 5px solid #fff;
 		margin-top: 87px;
+	}
+
+	&-name {
+		font-size: $font-size-bc;
+		color: $clr-secondary;
+	}
+
+	&-age {
+		font-weight: 400;
+		color: $clr-tertiary;
+	}
+
+	&-location {
+		font-size: 0.9rem;
+		color: $clr-tertiary;
+	}
+
+	&-stats {
+		@extend %flex-shared;
+		justify-content: space-evenly;
+		border-top: 1px solid $clr-neutral;
+		padding: 1.75rem 0;
+		margin-top: 1.75rem;
+
+		.stats {
+			&-num {
+				font-size: $font-size-bc;
+				font-weight: 700;
+				color: $clr-secondary;
+			}
+
+			&-type {
+				font-size: 0.6rem;
+				letter-spacing: 1px;
+				color: $clr-tertiary;
+			}
+		}
 	}
 }
 
