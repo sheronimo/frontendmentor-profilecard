@@ -27,4 +27,24 @@ a {
 	text-align: center;
 }
 
+// Base styles
+body {
+	min-height: 100vh;
+	@extend %flex-center-shared;
+	font-family: $font-stack;
+	background: url('../images/bg-pattern-top.svg') no-repeat bottom 50vh right
+			37vw,
+		url('../images/bg-pattern-bottom.svg') no-repeat 37vw 50vh;
+	background-color: $clr-primary;
+	background-attachment: fixed;
+	padding: 1.5rem;
+}
+
+// Profile Card
+.profile {
+	max-width: $max-width;
+	width: 100%;
+	background-color: #fff;
+}
+
 @import 'media';
