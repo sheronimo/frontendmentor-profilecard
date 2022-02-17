@@ -63,6 +63,7 @@ body {
 .profile-name {
   font-size: 1.125rem;
   color: #2d3248;
+  margin-top: 0.75rem;
 }
 
 .profile-age {
@@ -73,12 +74,13 @@ body {
 .profile-location {
   font-size: 0.9rem;
   color: #6a6f81;
+  margin-top: 0.45rem;
 }
 
 .profile .divider {
   border: 0;
   border-top: 1px solid #e8e8e8;
-  margin-top: 1.75rem;
+  margin-top: 1.4rem;
 }
 
 .profile-stats {
@@ -86,7 +88,7 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  padding: 1.75rem;
+  padding: 1.4rem;
 }
 
 .profile-stats .stats-num {

@@ -63,11 +63,14 @@ body {
 		margin-top: 87px;
 	}
 
+	// Profile Name
 	&-name {
 		font-size: $font-size-bc;
 		color: $clr-secondary;
+		margin-top: 0.75rem;
 	}
 
+	// Profile Age
 	&-age {
 		font-weight: 400;
 		color: $clr-tertiary;
@@ -76,18 +79,19 @@ body {
 	&-location {
 		font-size: 0.9rem;
 		color: $clr-tertiary;
+		margin-top: 0.45rem;
 	}
 
 	.divider {
 		border: 0;
 		border-top: 1px solid $clr-neutral;
-		margin-top: 1.75rem;
+		margin-top: 1.4rem;
 	}
 
 	&-stats {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		padding: 1.75rem;
+		padding: 1.4rem;
 
 		.stats {
 			&-num {
