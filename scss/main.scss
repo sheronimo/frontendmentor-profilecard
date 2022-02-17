@@ -20,6 +20,7 @@ a {
 %flex-shared {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .text-center {
@@ -30,7 +31,6 @@ a {
 body {
 	min-height: 100vh;
 	@extend %flex-shared;
-	justify-content: center;
 	font-family: $font-stack;
 	background: url('../images/bg-pattern-top.svg') no-repeat bottom 50vh right
 			37vw,
@@ -46,19 +46,18 @@ body {
 	max-width: $max-width;
 	width: 100%;
 	background-color: #fff;
-	border-radius: 5px;
+	border-radius: $border-radius;
 
 	// Profile Info
 	&-info {
-		background: url('../images/bg-pattern-card.svg') no-repeat;
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
+		background: url('../images/bg-pattern-card.svg') no-repeat top center;
+		border-top-left-radius: $border-radius;
+		border-top-right-radius: $border-radius;
 		padding: 0 0.5rem;
 	}
 
 	// Profile Image
 	&-img {
-		max-width: 100%;
 		border-radius: 50%;
 		border: 5px solid #fff;
 		margin-top: 87px;
@@ -79,12 +78,16 @@ body {
 		color: $clr-tertiary;
 	}
 
-	&-stats {
-		@extend %flex-shared;
-		justify-content: space-evenly;
+	.divider {
+		border: 0;
 		border-top: 1px solid $clr-neutral;
-		padding: 1.75rem 0;
 		margin-top: 1.75rem;
+	}
+
+	&-stats {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding: 1.75rem;
 
 		.stats {
 			&-num {
