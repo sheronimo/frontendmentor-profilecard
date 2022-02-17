@@ -43,5 +43,12 @@ body {
   max-width: 350px;
   width: 100%;
   background-color: #fff;
+  border-radius: 5px;
+}
+
+.profile-info {
+  background: url("../images/bg-pattern-card.svg") no-repeat;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 /*# sourceMappingURL=main.css.map */
