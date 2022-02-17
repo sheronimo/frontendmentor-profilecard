@@ -32,9 +32,9 @@ body {
 	min-height: 100vh;
 	@extend %flex-shared;
 	font-family: $font-stack;
-	background: url('../images/bg-pattern-top.svg') no-repeat bottom 50vh right
-			50vw,
-		url('../images/bg-pattern-bottom.svg') no-repeat 50vw 50vh;
+	background: url('../images/bg-pattern-top.svg') no-repeat bottom 46vh right
+			45vw,
+		url('../images/bg-pattern-bottom.svg') no-repeat 44vw 44vh;
 	background-color: $clr-primary;
 	background-attachment: fixed;
 	padding: 1.5rem;

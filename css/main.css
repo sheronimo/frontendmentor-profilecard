@@ -33,7 +33,7 @@ body {
 body {
   min-height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
-  background: url("../images/bg-pattern-top.svg") no-repeat bottom 50vh right 50vw, url("../images/bg-pattern-bottom.svg") no-repeat 50vw 50vh;
+  background: url("../images/bg-pattern-top.svg") no-repeat bottom 46vh right 45vw, url("../images/bg-pattern-bottom.svg") no-repeat 44vw 44vh;
   background-color: #19a2ae;
   background-attachment: fixed;
   padding: 1.5rem;
@@ -104,5 +104,13 @@ body {
   font-size: 0.6rem;
   letter-spacing: 1.5px;
   color: #6a6f81;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: url("../images/bg-pattern-top.svg") no-repeat bottom 37vh right 52vw, url("../images/bg-pattern-bottom.svg") no-repeat 48vw 52vh;
+    background-color: #19a2ae;
+    background-attachment: fixed;
+  }
 }
 /*# sourceMappingURL=main.css.map */

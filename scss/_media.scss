@@ -1,0 +1,9 @@
+@media (min-width: 1024px) {
+	body {
+		background: url('../images/bg-pattern-top.svg') no-repeat bottom 37vh right
+				52vw,
+			url('../images/bg-pattern-bottom.svg') no-repeat 48vw 52vh;
+		background-color: $clr-primary;
+		background-attachment: fixed;
+	}
+}
