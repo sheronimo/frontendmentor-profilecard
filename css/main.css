@@ -14,7 +14,27 @@ a {
   text-decoration: none;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .text-center {
   text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background: url("../images/bg-pattern-top.svg") no-repeat bottom 50vh right 37vw, url("../images/bg-pattern-bottom.svg") no-repeat 37vw 50vh;
+  background-color: #19a2ae;
+  background-attachment: fixed;
 }
 /*# sourceMappingURL=main.css.map */
