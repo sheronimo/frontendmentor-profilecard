@@ -33,7 +33,7 @@ body {
 body {
   min-height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
-  background: url("../images/bg-pattern-top.svg") no-repeat bottom 50vh right 37vw, url("../images/bg-pattern-bottom.svg") no-repeat 37vw 50vh;
+  background: url("../images/bg-pattern-top.svg") no-repeat bottom 50vh right 50vw, url("../images/bg-pattern-bottom.svg") no-repeat 50vw 50vh;
   background-color: #19a2ae;
   background-attachment: fixed;
   padding: 1.5rem;
@@ -45,6 +45,8 @@ body {
   width: 100%;
   background-color: #fff;
   border-radius: 15px;
+  -webkit-box-shadow: 0 30px 40px rgba(45, 50, 72, 0.3);
+          box-shadow: 0 30px 40px rgba(45, 50, 72, 0.3);
 }
 
 .profile-info {
@@ -69,6 +71,7 @@ body {
 .profile-age {
   font-weight: 400;
   color: #6a6f81;
+  padding-left: 0.25rem;
 }
 
 .profile-location {
