@@ -113,4 +113,20 @@ body {
 	}
 }
 
+// Attribution
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 3rem;
+	color: #fff;
+}
+.attribution a {
+	color: $clr-secondary;
+	transition: color 0.3s ease;
+
+	&:hover {
+		color: $clr-neutral;
+	}
+}
+
 @import 'media';

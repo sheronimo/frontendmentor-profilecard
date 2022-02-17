@@ -112,6 +112,23 @@ body {
   color: #6a6f81;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3rem;
+  color: #fff;
+}
+
+.attribution a {
+  color: #2d3248;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.attribution a:hover {
+  color: #e8e8e8;
+}
+
 @media (min-width: 1024px) {
   body {
     background-position: right 51vw bottom 40vh, left 49vw top 49vh;
