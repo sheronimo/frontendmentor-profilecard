@@ -1,5 +1,7 @@
 @import 'config';
 
+// Resets
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,6 +14,17 @@ ul {
 
 a {
 	text-decoration: none;
+}
+
+// Utilities
+%flex-center-shared {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-center {
+	text-align: center;
 }
 
 @import 'media';
