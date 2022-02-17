@@ -32,8 +32,14 @@ body {
 
 body {
   min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Kumbh Sans", sans-serif;
-  background: url("../images/bg-pattern-top.svg") no-repeat bottom 46vh right 45vw, url("../images/bg-pattern-bottom.svg") no-repeat 44vw 44vh;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 48vw bottom 40vh, left 45vw top 44vh;
   background-color: #19a2ae;
   background-attachment: fixed;
   padding: 1.5rem;
@@ -108,9 +114,7 @@ body {
 
 @media (min-width: 1024px) {
   body {
-    background: url("../images/bg-pattern-top.svg") no-repeat bottom 37vh right 52vw, url("../images/bg-pattern-bottom.svg") no-repeat 48vw 52vh;
-    background-color: #19a2ae;
-    background-attachment: fixed;
+    background-position: right 51vw bottom 40vh, left 49vw top 49vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

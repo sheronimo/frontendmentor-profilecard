@@ -31,10 +31,12 @@ a {
 body {
 	min-height: 100vh;
 	@extend %flex-shared;
+	flex-direction: column;
 	font-family: $font-stack;
-	background: url('../images/bg-pattern-top.svg') no-repeat bottom 46vh right
-			45vw,
-		url('../images/bg-pattern-bottom.svg') no-repeat 44vw 44vh;
+	background-image: url('../images/bg-pattern-top.svg'),
+		url('../images/bg-pattern-bottom.svg');
+	background-repeat: no-repeat;
+	background-position: right 48vw bottom 40vh, left 45vw top 44vh;
 	background-color: $clr-primary;
 	background-attachment: fixed;
 	padding: 1.5rem;
