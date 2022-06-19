@@ -30,7 +30,7 @@ body {
   background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat;
   background-position: right 48vw bottom 40vh, left 45vw top 44vh;
-  background-color: #19a2ae;
+  background-color: hsl(185deg, 75%, 39%);
   background-attachment: fixed;
   padding: 1.5rem;
   line-height: 1.5;
@@ -41,7 +41,7 @@ body {
   width: 100%;
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0 30px 40px rgba(45, 50, 72, 0.3);
+  box-shadow: 0 30px 40px hsla(229deg, 23%, 23%, 0.3);
 }
 .profile-info {
   background: url("../images/bg-pattern-card.svg") no-repeat top center;
@@ -56,22 +56,22 @@ body {
 }
 .profile-name {
   font-size: 1.125rem;
-  color: #2d3248;
+  color: hsl(229deg, 23%, 23%);
   margin-top: 0.75rem;
 }
 .profile-age {
   font-weight: 400;
-  color: #6a6f81;
+  color: hsl(227deg, 10%, 46%);
   padding-left: 0.25rem;
 }
 .profile-location {
   font-size: 0.9rem;
-  color: #6a6f81;
+  color: hsl(227deg, 10%, 46%);
   margin-top: 0.45rem;
 }
 .profile .divider {
   border: 0;
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid hsl(0deg, 0%, 91%);
   margin-top: 1.4rem;
 }
 .profile-stats {
@@ -82,12 +82,12 @@ body {
 .profile-stats .stats-num {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #2d3248;
+  color: hsl(229deg, 23%, 23%);
 }
 .profile-stats .stats-type {
   font-size: 0.6rem;
   letter-spacing: 1.5px;
-  color: #6a6f81;
+  color: hsl(227deg, 10%, 46%);
 }
 
 .attribution {
@@ -98,11 +98,11 @@ body {
 }
 
 .attribution a {
-  color: #2d3248;
+  color: hsl(229deg, 23%, 23%);
   transition: color 0.3s ease;
 }
 .attribution a:hover {
-  color: #e8e8e8;
+  color: hsl(0deg, 0%, 91%);
 }
 
 @media (min-width: 1024px) {
